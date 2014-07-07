@@ -36,10 +36,10 @@ public class QName {
     * Constructor for QName
     * @param name
     */
-    public QName(String name) throws IllegalNameException{
-	this.name = name;
+    public QName(String name) throws IllegalNameException{	
         if (Pattern.matches(regularExpression, name)){
-        }        
+            this.name = name;       
+        }
         else{
             throw new IllegalNameException();
         }
