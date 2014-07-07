@@ -24,7 +24,7 @@ public class QNameTest {
             try{
                 Parser.parse(legalQNames[i]);
             }catch(IllegalNameException e){
-                sb.append("\nException not expected in: "+legalQNames[i]+"\"");
+                sb.append("\nException not expected in: "+legalQNames[i]+"\\");
             }
         }
         if (sb.length() > 0) {
@@ -48,7 +48,7 @@ public class QNameTest {
         for(int i = 0; i < illegalQNames.length; i++) {
             try{
                 Parser.parse(illegalQNames[i]);
-                sb.append("Exception expected in: "+illegalQNames[i]);
+                sb.append("\nException expected in: "+illegalQNames[i]+"\\");
             }catch(IllegalNameException e){}
         }
         if (sb.length() > 0) {
