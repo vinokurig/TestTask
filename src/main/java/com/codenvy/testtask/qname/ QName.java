@@ -34,9 +34,10 @@ public class QName {
     
     /** 
     * Constructor for QName
+    * @param name
     */
     public QName(String name) throws IllegalNameException{
-	      this.name = name;
+	this.name = name;
         if (Pattern.matches(regularExpression, name)){
         }        
         else{
@@ -52,6 +53,7 @@ public class QName {
             return name.substring(0, name.indexOf(":"));
         }        
         else{
+            System.out.println("The entered name is a Simple Name, there is no Prefix!");
             return "";
         }
     }
