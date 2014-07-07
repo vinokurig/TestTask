@@ -5,6 +5,6 @@
 3) Download the repository:
   git clone git://github.com/vinokurig/testtask2.git
 4) Go to created directory:
-  cd testtask
+  cd testtask2
 5) Build the program and run test:
   mvn install
