@@ -11,20 +11,20 @@ import org.junit.Test;
 public class QNameTest {
     
     /**
-    * Method tests Qname class by parsing correct names.
+    * Method tests Qname classes by parsing correct names.
     */
     @Test
     public void checkCorrectQNames() {
-        String [] illegalQNames = new String []{"prefix:name", "prefix:na me"
+        String [] legalQNames = new String []{"prefix:name", "prefix:na me"
                                             , "name", "n", "p:n", "n-:-"};
 
         StringBuilder sb = new StringBuilder();
 
-        for(int i = 0; i < illegalQNames.length; i++) {
+        for(int i = 0; i < legalQNames.length; i++) {
             try{
-                Parser.parse(illegalQNames[i]);
+                Parser.parse(legalQNames[i]);
             }catch(IllegalNameException e){
-                sb.append("\nException not expected in: "+illegalQNames[i]+"\"");
+                sb.append("\nException not expected in: "+legalQNames[i]+"\"");
             }
         }
         if (sb.length() > 0) {
@@ -33,7 +33,7 @@ public class QNameTest {
     }                
     
     /** 
-     * Method tests Qname class by throwing IllegalNameException
+     * Method tests Qname classes by throwing IllegalNameException
      * while parsing incorrect names.
      */
     @Test
