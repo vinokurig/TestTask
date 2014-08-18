@@ -8,3 +8,6 @@
   cd testtask2
 5) Build the program and run test:
   mvn install
+[14:42:13] Andrey Plotnikov: https://github.com/google/guice/wiki/Motivation
+[14:43:32] Andrey Plotnikov: http://code.google.com/p/google-gin/wiki/GinTutorial
+[14:43:43] Andrey Plotnikov: http://docs.codenvy.com/sdk/tutorials/gin-tutorial/
